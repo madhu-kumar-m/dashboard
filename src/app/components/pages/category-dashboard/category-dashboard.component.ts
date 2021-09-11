@@ -29,7 +29,7 @@ export class CategoryDashboardComponent implements OnInit {
         ]);
 
         var options = {
-          title: 'My Daily Activities',
+          title: 'Products and Shares',
           pieHole: 0.4,
         };
 

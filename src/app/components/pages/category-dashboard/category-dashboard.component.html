@@ -1,17 +1,18 @@
 <section class="main">
-    <div class="scroll">
+<div class="scroll">
     <div class="container overview">
         <div class="row overview-title d-flex justify-content-between m-auto">
             <div class="col-6">
-                <h5><i class="fas fa-chart-line ml-2 text-primary"></i> Stat-Overview</h5>
+                <h5><i class="fas fa-chart-line me-2 text-primary"></i>Stat-Overview</h5>
             </div>
             <div class="col-6 text-end dropdown">
-                 <button class="btn bg-light filter-btn dropdown-toggle" type="button" id="drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Show Filter&nbsp;<i class="fas fa-filter text-primary"></i></button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <li><a href="#">My Profile</a></li>
-                      <li><a href="#">Edit Profile</a></li>
-                      <li><a href="#">Profile Settings</a></li>
-                      <li><a href="#">Logout</a></li>
+                    <button class="btn bg-light filter-btn dropdown-toggle border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Show Filter&nbsp;<i class="fas fa-filter text-primary"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Filter1</a></li>
+                      <li><a class="dropdown-item" href="#">Filter2</a></li>
+                      <li><a class="dropdown-item" href="#">Filter3</a></li>
                     </ul>
             </div>
         </div>
@@ -97,7 +98,7 @@
 
     <div class="container">
         <div class="row">
-            <h5><i class="fas fa-chart-pie  ms-1 text-primary"></i> Product Sharing Analysis</h5>
+            <h5><i class="fas fa-chart-pie  me-2 text-primary"></i>Product Sharing Analysis</h5>
         </div>
         <div class="row">
             <div class="col-md-6">
@@ -108,25 +109,110 @@
                             <small>Here goes supporting lines of text</small>
                         </div>
                         <div class="dropdown ms-auto">
-                            <p>dropdown<p>
-
+                                <button class="btn filter-btn bg-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Duration
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Today</a></li>
+                                  <li><a class="dropdown-item" href="#">Yesterday</a></li>
+                                  <li><a class="dropdown-item" href="#">Last Week</a></li>
+                                  <li><a class="dropdown-item" href="#">Last Month</a></li>
+                                  <li><a class="dropdown-item" href="#">Last 6 Months</a></li>
+                                  <li><a class="dropdown-item" href="#">Last Year</a></li>
+                                </ul>
                         </div>
                     </div>
                     <div class="card-body">  
-                        <div id="donutchart" style="width: 400px; height: auto;"></div> 
+                        <div id="donutchart" style="width: 300px; height: 600px;"></div> 
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="card-group col-6">
+            <div class="card col-6 shadow-none">
+                <div class="card-header">
+                    <h6>Increase in Shares</h6>
+                   <small>Here goes some text</small>
+                </div>
+                <div class="card-body row">
+                    <div class="d-flex justify-content-between">
+                        <span>
+                        <h6>55%</h6>
+                        <small>Garnier</small>
+                        </span>
+                        <span>
+                            <i class="fas fa-arrow-up"></i>
+                        </span>
+                   </div>
+                   <div class="d-flex justify-content-between">
+                       <span>
+                       <h6>55%</h6>
+                       <small>Garnier</small>
+                        </span>
+                        <span>
+                            <i class="fas fa-arrow-up"></i>
+                        </span>
+                   </div>
+                   <div class="d-flex justify-content-between">
+                       <span>
+                       <h6>55%</h6>
+                       <small>Garnier</small>
+                        </span>
+                        <span>
+                            <i class="fas fa-arrow-up"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
 
-            </div> 
+            <div class="card col-6 shadow-none">
+                    <div class="card-header">
+                        <h6>Increase in Shares</h6>
+                        <small>Here goes some text</small>
+                    </div>
+                    <div class="card-body row">
+                        <div class="d-flex justify-content-between">
+                            <span>
+                            <h6>55%</h6>
+                            <small>Garnier</small>
+                            </span>
+                            <span>
+                                <i class="fas fa-arrow-down"></i>
+                            </span>
+                       </div>
+                       <div class="d-flex justify-content-between">
+                           <span>
+                           <h6>55%</h6>
+                           <small>Garnier</small>
+                            </span>
+                            <span>
+                                <i class="fas fa-arrow-down"></i>
+                            </span>
+                       </div>
+                       <div class="d-flex justify-content-between">
+                           <span>
+                           <h6>55%</h6>
+                           <small>Garnier</small>
+                            </span>
+                            <span>
+                                <i class="fas fa-arrow-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            
+            
+
+
+
+
+
+            
 
 
         </div> 
-
     </div>
-
 </div>
 
 </section>
