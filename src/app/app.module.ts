@@ -15,7 +15,7 @@ import { CategoryDashboardComponent } from './components/pages/category-dashboar
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -34,8 +34,7 @@
             "scripts": [
               "../dashboard/node_modules/jquery/dist/jquery.min.js",
               "../dashboard/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "../dashboard/node_modules/@fortawesome/fontawesome-free/js/all.min.js",
-              "../dashboard/node_modules/chart.js/dist/chart.min.js"
+              "../dashboard/node_modules/@fortawesome/fontawesome-free/js/all.min.js"
               
             ]
           },

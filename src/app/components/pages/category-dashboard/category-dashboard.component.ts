@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'; 
-import { Chart } from 'chart.js';
+
 declare var google: any;
 
 
@@ -15,33 +15,29 @@ export class CategoryDashboardComponent implements OnInit {
 
   ngOnInit(): void {
 
-    google.charts.load('current', {'packages':['corechart']});
-    google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-
+    google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
         var data = google.visualization.arrayToDataTable([
-        ['Task', 'Hours per Day'],
-        ['Work',     11],
-        ['Eat',      2],
-        ['Commute',  2],
-        ['Watch TV', 2],
-        ['Sleep',    7]
+          ['Products', 'Sharings per Product'],
+          ['Dawn',     52],
+          ['Cascade',  16],
+          ['Scotch Bride',  15],
+          ['Sun Triple', 7],
+          ['Colorex',    5],
+          ['Scotch Bride', 5]
         ]);
 
         var options = {
-        title: 'My Daily Activities'
+          title: 'My Daily Activities',
+          pieHole: 0.4,
         };
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
         chart.draw(data, options);
+      }
+
+
     }
-    
-    
+     
   }
-
-
-  
-
-}
