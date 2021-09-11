@@ -1,1 +1,70 @@
-<p>header works!</p>
+<!-- --------Header--------- -->
+<nav class="navbar navbar-expand-md navbar-light">
+  <div class="hamberger bg-primary mx-2">
+    <button (click)=toggleMe() type="button" class="btn btn-primary"><i class="fas fa-bars fa-1x"></i></button>
+  </div>  
+  <div class="header-title pl-3 mr-auto w-50 justify-content-between">
+    <div class="mr-auto brand pl-md-2 d-flex">
+      <a class="navbar-brand text-primary text-light" href="#">SNAP2INSIGHT</a>
+    </div>
+    <div class="dash mr-md-auto  pt-2">
+      <h4>Category Dashboard</h4>
+    </div>
+  </div>
+  <a class="user-link navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-user-alt fa-2x text-light"></i>
+  </a>
+    
+<div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+  <div class= "nav nav-navbar ml-auto float-end mr-4">
+      <div class="text-light text-end pr-3 mr-1">
+        <small>Welcome back!</small>
+        <h6>Jimmy Anderson</h6>
+      </div>
+      <div>
+        <img alt="profile picture" src="../../../assets/pp.jpeg"  class="rounded-circle" width="45" height="45" >
+      </div>
+  </div>
+</div>
+</nav>
+
+
+<!-- -------Navigation Menu------ -->
+<div *ngIf="showMe"  class="sidenav" id="side-nav">
+  <div class="scroll">
+      <div class="nav-group mt-2">
+          <h4 class="nav-heading">CATEGORY ONE</h4>
+          <div class="card">
+              <a href="#"><i class="fas fa-poll-h fa-lg mx-2"></i>&nbsp;Project Summary</a>
+              <a href="#"><i class="fas fa-vote-yea fa-lg mx-2"></i>&nbsp;Display Execution</a>
+              <a href="#"><i class="fas fa-upload fa-lg mx-2"></i>&nbsp;Photo Upload</a>
+          </div>
+      </div>
+      <div class="nav-group mt-2">
+          <h4 class="nav-heading">CATEGORY TWO</h4>
+          <div class="card">
+                  <a href="#"><i class="fas fa-file-signature fa-lg mx-2"></i>&nbsp;Photo Analysis</a>
+                  <a href="#"><i class="fas fa-search-plus fa-lg mx-2"></i>&nbsp;Distribution Summary</a>
+                  <a href="#"><i class="fas fa-boxes fa-lg mx-2"></i>&nbsp;Category Dashoboard</a>
+          </div>
+      </div>
+      <div class="nav-group mt-2">
+          <h4 class="nav-heading">CATEGORY THREE</h4>
+          <div class="card">
+              <a href="#"><i class="fas fa-tasks fa-lg mx-2"></i>&nbsp;Project Status</a>
+              <a href="#"><i class="fas fa-images fa-lg mx-2"></i>&nbsp;Photo Review</a>
+              <a href="#"><i class="fas fa-business-time fa-lg mx-2"></i>&nbsp;Project Review</a>
+              <a href="#"><i class="fas fa-clock fa-lg mx-2"></i>&nbsp;Audit Photos</a>
+          </div>
+      </div>
+      <div class="nav-group mt-2 bottom">
+          <h4 class="nav-heading">CATEGORY FOUR</h4>
+          <div class="card ">
+              <a href="#"><i class="fas fa-columns fa-lg mx-2"></i>&nbsp;Audit Dashboard</a>
+              <a href="#"><i class="fas fa-cash-register fa-lg mx-2"></i>&nbsp;Store Summary</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+

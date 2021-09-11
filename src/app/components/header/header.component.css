@@ -1,0 +1,144 @@
+
+/*---Header styling----*/
+nav{
+    height: auto;
+    background-color: rgb(54, 116, 248);
+    border-bottom: 2px solid #fff;
+}
+
+.dash{
+    color: rgb(2, 2, 2);
+}
+
+.navbar-brand{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.header-title{
+    display: flex;
+}
+
+.hamberger button{
+    display: none;
+}
+
+
+
+
+/*---navigation styling----*/
+.sidenav{
+    height: auto;
+    width: 270px;
+    background-color: rgb(54, 116, 248);
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    position: fixed;
+    z-index:3;
+}
+
+.scroll{
+    overflow-y: scroll;
+    position: relative;
+    height: calc(100vh - 70px);
+}
+
+.scroll::-webkit-scrollbar {
+    overflow-y: scroll;
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.nav-heading{
+    font-size: 12px;
+    text-align: left;
+    font-weight: 600;
+    color:rgb(201, 199, 199);
+    background-color: rgb(38, 68, 112);
+    height: 30px;
+    padding: 08px 0px 0px 10px;
+    border-radius: 15px;
+}
+
+.nav-group a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    height: 35px
+}
+
+.nav-group a:hover{
+  background-color: rgb(53, 104, 180);
+  color: #fff;
+  border-radius: 12px;
+  font-weight: 550;
+  transition:ease-in-out;
+}
+
+.card{
+    background-color: rgb(117, 173, 247);
+    margin: 0px 07px;
+    border-radius: 12px;
+}
+
+.bottom{
+    margin-bottom: 25px;
+}
+
+
+
+
+
+/*-----Mediem screen devices-----*/
+@media(max-width: 768px) {
+    
+/*---header styling----*/
+
+    .dash{
+        width: auto;
+    }
+
+    .dash h4{
+        font-size: 16px;
+    }
+
+    .navbar-brand{
+        font-size: 20px;
+        font-weight: 500;
+        
+    }
+
+    .hamberger button{
+        font-size: 30px;
+        display: block;
+        color: #fff;
+        margin:  0px auto;
+        background: rgb(54, 116, 248);
+    }
+
+    .header-title{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user-link{
+        text-decoration: none;
+    }
+    
+    
+     .user-link .fas:hover{
+        color: #000;
+    }
+
+    
+/*---navigation styling----*/
+
+    .sidenav{
+        width: 250px;
+    }
+
+}
+
+

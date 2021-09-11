@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  showMe:boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  toggleMe(){
+    this.showMe =!this.showMe;
+  }
+
+  
 
 }
