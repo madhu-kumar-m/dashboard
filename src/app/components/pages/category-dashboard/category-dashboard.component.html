@@ -16,7 +16,7 @@
                     </ul>
             </div>
         </div>
-        <div class="row card-deck d-flex justify-content-between">
+        <div class="row card-deck d-flex">
                 <div class="card col-2">
                     <div class="card-body">
                         <div class="cardheading d-flex justify-content-between">
@@ -100,9 +100,9 @@
         <div class="row">
             <h5><i class="fas fa-chart-pie  me-2 text-primary"></i>Product Sharing Analysis</h5>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
+        <div class="row graph">
+            <div class="col-lg-6  m-auto">
+                <div class="card card-b">
                     <div class="card-header d-flex">
                         <div class="header">
                             <h5>Product List</h5>
@@ -123,83 +123,121 @@
                         </div>
                     </div>
                     <div class="card-body">  
-                        <div id="donutchart" style="width: 300px; height: 600px;"></div> 
+                        <div id="donutchart" class="donutchart"></div> 
                     </div>
                 </div>
             </div>
 
-            <div class="card-group col-6">
-            <div class="card col-6 shadow-none">
-                <div class="card-header">
-                    <h6>Increase in Shares</h6>
-                   <small>Here goes some text</small>
-                </div>
-                <div class="card-body row">
-                    <div class="d-flex justify-content-between">
-                        <span>
-                        <h6>55%</h6>
-                        <small>Garnier</small>
-                        </span>
-                        <span>
-                            <i class="fas fa-arrow-up"></i>
-                        </span>
-                   </div>
-                   <div class="d-flex justify-content-between">
-                       <span>
-                       <h6>55%</h6>
-                       <small>Garnier</small>
-                        </span>
-                        <span>
-                            <i class="fas fa-arrow-up"></i>
-                        </span>
-                   </div>
-                   <div class="d-flex justify-content-between">
-                       <span>
-                       <h6>55%</h6>
-                       <small>Garnier</small>
-                        </span>
-                        <span>
-                            <i class="fas fa-arrow-up"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card col-6 shadow-none">
+            <div class="col-lg-6 m-auto">
+                <div class="row card group card-b">
+                <div class="col-6">
                     <div class="card-header">
                         <h6>Increase in Shares</h6>
-                        <small>Here goes some text</small>
+                    <small>Here goes some text</small>
                     </div>
-                    <div class="card-body row">
+                    <div class="card-body card-scroll row">
                         <div class="d-flex justify-content-between">
                             <span>
                             <h6>55%</h6>
                             <small>Garnier</small>
                             </span>
                             <span>
-                                <i class="fas fa-arrow-down"></i>
+                                <i class="fas fa-arrow-up text-success"></i>
                             </span>
-                       </div>
-                       <div class="d-flex justify-content-between">
-                           <span>
-                           <h6>55%</h6>
-                           <small>Garnier</small>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>
+                            <h6>33%</h6>
+                            <small>Header & Sholders</small>
+                                </span>
+                                <span>
+                                    <i class="fas fa-arrow-up text-success"></i>
+                                </span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>
+                            <h6>27%</h6>
+                            <small>Pantene</small>
                             </span>
                             <span>
-                                <i class="fas fa-arrow-down"></i>
+                                    <i class="fas fa-arrow-up text-success"></i>
                             </span>
-                       </div>
-                       <div class="d-flex justify-content-between">
-                           <span>
-                           <h6>55%</h6>
-                           <small>Garnier</small>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>
+                            <h6>16%</h6>
+                            <small>Sauve</small>
                             </span>
                             <span>
-                                <i class="fas fa-arrow-down"></i>
+                                    <i class="fas fa-arrow-up text-success"></i>
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>
+                            <h6>22%</h6>
+                            <small>Dove</small>
+                            </span>
+                            <span>
+                                    <i class="fas fa-arrow-up text-success"></i>
                             </span>
                         </div>
                     </div>
-                 </div>
+                </div>
+
+                <div class="col-6 ">
+                        <div class="card-header">
+                            <h6>Decrease in Shares</h6>
+                            <small>Here goes some text</small>
+                        </div>
+                    <div class="card-body row card-scroll">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                <h6>20%</h6>
+                                <small>Khadi</small>
+                                </div>
+                                <div>
+                                    <i class="fas fa-arrow-down text-danger"></i>
+                                </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                            <h6>16%</h6>
+                            <small>Nestle</small>
+                            </div>
+                                <div>
+                                    <i class="fas fa-arrow-down text-danger"></i>
+                                </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6>12%</h6>
+                                <small>Kukabura</small>
+                            </div>
+                            <div>
+                                <i class="fas fa-arrow-down text-danger"></i>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6>10%</h6>
+                                <small>Boost</small>
+                            </div>
+                            <div>
+                                <i class="fas fa-arrow-down text-danger"></i>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6>16%</h6>
+                                <small>Britannia</small>
+                            </div>
+                            <div>
+                                <i class="fas fa-arrow-down text-danger"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             
