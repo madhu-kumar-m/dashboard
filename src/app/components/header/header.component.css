@@ -95,6 +95,11 @@ nav{
 @media(max-width: 830px) {
     
 /*---header styling----*/
+.scroll{
+    overflow-y: scroll;
+    position: relative;
+    height: calc(100vh - 90px);
+}
 
     .dash{
         width: auto;
