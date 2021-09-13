@@ -21,10 +21,10 @@ export class HeaderComponent implements OnInit {
     } else {
       if(screen_size < 830)
     {
-      console.log(screen_size + "true")
+      console.log(screen_size + "false")
       this.showMe = false;
     } else {
-      console.log(screen_size + "false")
+      console.log(screen_size + "true")
       this.showMe = true;
     }
     }

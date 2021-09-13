@@ -28,7 +28,7 @@ nav{
 
 /*---navigation styling----*/
 .sidenav{
-    height: auto;
+    height: 100vh;
     width: 270px;
     background-color: rgb(54, 116, 248);
     color: #fff;

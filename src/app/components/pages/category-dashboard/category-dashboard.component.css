@@ -99,7 +99,7 @@
 
 .container{
     height: auto;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .group{
@@ -158,7 +158,7 @@
     }
 
     .donutchart{
-        height: 130px;
+        height: 170px;
         width: 230px;
         margin: 0;
         padding: 0;
@@ -172,6 +172,13 @@
 
     small{
         font-size: 12px;
+    }
+
+    .card-scroll{
+        overflow-y: scroll;
+        position: relative;
+        height: 210px;
+    
     }
     
 
